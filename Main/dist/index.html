@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="../../src/style.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script>
+            (function(d) {
+              var config = {
+                kitId: 'lof2aft',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+          </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>〇〇完全に理解した😎</h1>
+            <p id="howToUse"><i class="fa-solid fa-circle-question"></i></p>
+        </header>
+        <div class="chartPadding">
+            <canvas id="chart" width="600" height="400"></canvas>
+        </div>
+        <div id="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div id="modalTitle">今日の進捗をツイートする？</div>
+                    <div id="modalClose"><span class="material-icons-outlined">highlight_off</span></div>
+                </div>
+                <div class="modal-body">
+                    <p>今日の<input id="userName" type="text">さんは</p>
+                    <p><input id="something" type="text"><span id="state"></span></p>
+                    <button id="shareButton"><i class="fa-brands fa-twitter"></i> Tweet</button>
+                </div>
+            </div>
+        </div>
+        <script src="../../src/index.js" type="module"></script>
+    </body>
+</html>

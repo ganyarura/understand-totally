@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: fot-seurat-pron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: royalblue;
+    align-items: center;
+}
+
+header h1{
+    margin-left: 40px;
+    font-size: 24px;
+    color: azure;
+}
+
+header p {
+    margin-left: auto;
+    margin-right: 40px;
+    font-size: 24px;
+    color: azure;
+    cursor: pointer;
+}
+
+.chartPadding{
+    width: 100vw;
+}
+
+#chart{
+    margin: 20%;
+}
+
+#modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    background-color: azure;
+    margin: 20% auto;
+    width: 50%;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.modal-header{
+    background-color: #1DA1F2;
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+}
+
+#modalTitle{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#modalClose{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.material-icons-outlined{
+    content: '\e888';
+    font-family: 'Material Icons';
+    vertical-align: middle;
+}
+
+#modalClose:hover{
+    cursor: pointer;
+}
+
+.modal-body{
+    color: #00005d;
+}
+
+.modal-body p{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.modal-body input{
+    font-size: 1.1rem;
+    font-family: fot-seurat-pron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 7px;
+    border: 0.1rem solid #00005d;
+    background-color: white;
+    color: #00005d;
+    margin: 0 5px;
+}
+
+.modal-body input:focus{
+    border: 0.2rem solid #00005d;
+    z-index: 10;
+    outline: 0;
+}
+
+#shareButton{
+    background-color: #1DA1F2;
+    color: azure;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 100vh;
+    display: block;
+    margin: 0 10px 0 auto;
+    padding: 0 10px;
+    font-family: fot-seurat-pron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#shareButton:hover{
+    cursor: pointer;
+}
