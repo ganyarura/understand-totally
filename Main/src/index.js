@@ -20,7 +20,7 @@ function modalClose() {
 function tweet(text){
     let shareURL = 'https://twitter.com/intent/tweet';
     shareURL += '?text='+encodeURIComponent(text);
-    const pageLink = "https://twitter.com/rei_Toya_rei";
+    const pageLink = "http://understand-totally.net/";
     window.open(shareURL+pageLink);
 }
 
